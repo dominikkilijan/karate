@@ -6,7 +6,9 @@ function fn() {
   }
   var config = {
     env: env,
-    myVarName: 'someValue'
+    myVarName: 'someValue',
+    springUrl: 'http://localhost:8080/',
+    pythonUrl: 'http://localhost:8000/'
   }
   if (env == 'dev') {
     // customize
