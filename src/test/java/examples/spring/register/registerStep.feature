@@ -1,4 +1,4 @@
-@RegisterUser
+@RegisterStep
 Feature: Register user - ok step
 
   Scenario: Create a correct user

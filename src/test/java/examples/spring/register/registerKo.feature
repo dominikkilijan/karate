@@ -1,4 +1,4 @@
-@Spring @RegisterUser @Robustness
+@Spring1 @Register @Robustness
 Feature: Register user - ko tests
 
   Background:
@@ -35,7 +35,7 @@ Feature: Register user - ko tests
       | ''    |
       | null  |
 
-  @InvalidPassord
+  @InvalidPassword
   Scenario Outline: Invalid password: <password>
     Given path 'register'
     And userData.password = <password>
@@ -50,7 +50,7 @@ Feature: Register user - ko tests
 
   @DupliacatedEmail
   Scenario: Register user with used email
-    * call read('registerUserStep.feature') userData
+    * call read('registerStep.feature') userData
     Given path 'register'
     And request userData
     When method POST
